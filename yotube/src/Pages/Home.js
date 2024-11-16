@@ -10,6 +10,7 @@ const videoData = [
     views: 233,
     chname: "Tech Burner",
   },
+
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
   { id: 3, title: "JavaScript Crash Course", category: "Education" },
   { id: 4, title: "Live Gaming Stream", category: "Gaming" },
@@ -30,7 +31,8 @@ function Home() {
     <div className="App">
       <h2>YouTube</h2>
 
-      <div className="category-buttons">0
+      <div className="category-buttons">
+        0
         {categories.map((category) => (
           <button
             key={category}
