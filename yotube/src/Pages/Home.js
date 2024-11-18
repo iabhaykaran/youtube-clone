@@ -1,6 +1,9 @@
 import "../App.css";
 import React, { useState } from "react";
 import VideoCard from "../components/VideoCard";
+// import { FaHome, FaFire, FaPlayCircle, FaHeart, FaBars } from "react-icons/fa";
+
+import Side from "./Side";
 
 const videoData = [
   {
@@ -20,6 +23,8 @@ const videoData = [
 const categories = ["All", "Education", "Entertainment", "Gaming", "Health"];
 
 function Home() {
+
+
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredVideos =
@@ -30,9 +35,12 @@ function Home() {
   return (
     <div className="App">
       <h2>YouTube</h2>
-
       <div className="category-buttons">
-        0
+        {/* <button className="toggle-button">
+          <FaBars   />
+          </button> */}
+         <Side />
+
         {categories.map((category) => (
           <button
             key={category}
@@ -44,17 +52,40 @@ function Home() {
         ))}
       </div>
 
-      <div className="video-list">
-        {filteredVideos.map((video) => (
-          <div className="video-item">
-            <VideoCard
-              key={video.id}
-              title={video.title}
-              views={video.views}
-              chname={video.chname}
-            />
-          </div>
-        ))}
+      <div className="home">
+        <div>
+          {/* <ul className="menu">
+        <li>
+          <FaHome />
+          {!isSidebarCollapsed && <span>Home</span>}
+        </li>
+        <li>
+          <FaFire />
+          {!isSidebarCollapsed && <span>Trending</span>}
+        </li>
+        <li>
+          <FaPlayCircle />
+          {!isSidebarCollapsed && <span>Subscriptions</span>}
+        </li>
+        <li>
+          <FaHeart />
+          {!isSidebarCollapsed && <span>Liked Videos</span>}
+        </li>
+      </ul> */}
+        </div>
+
+        <div className="video-list">
+          {filteredVideos.map((video) => (
+            <div className="video-item">
+              <VideoCard
+                key={video.id}
+                title={video.title}
+                views={video.views}
+                chname={video.chname}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
