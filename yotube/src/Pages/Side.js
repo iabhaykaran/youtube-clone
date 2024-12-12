@@ -3,6 +3,8 @@ import { Sidebar } from "primereact/sidebar";
 import { FaHome, FaFire, FaPlayCircle, FaHeart } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import "../App.css";
+import { Link } from "react-router-dom";
+
 export default function Side() {
   const [visible, setVisible] = useState(false);
 
@@ -19,13 +21,21 @@ export default function Side() {
           <ul >
             <h4>
 
-            <li>
+              {/* <li>
+                <Link to="home">
+              <FaHome />
+               {<span>Home</span>}
+                </Link> 
+            </li> */}
+              <li>
               <FaHome />
                {<span>Home</span>}
             </li>
             <li>
+                <Link to="trending">
               <FaFire />
               <span>Trending</span>
+                </Link> 
             </li>
             <li>
               <FaPlayCircle />

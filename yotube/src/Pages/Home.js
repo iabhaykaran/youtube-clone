@@ -15,16 +15,34 @@ const videoData = [
   },
 
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  { id: 3, title: "JavaScript Crash Course", category: "Education" },
+  { id: 3, title: "JavaScript Crash Course", category: "Education" },
+  { id: 3, title: "JavaScript Crash Course", category: "Education" },
   { id: 3, title: "JavaScript Crash Course", category: "Education" },
   { id: 4, title: "Live Gaming Stream", category: "Gaming" },
+  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
+  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
+  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
+  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Health" },
   { id: 5, title: "Fitness Tips", category: "Health" },
 ];
 
 const categories = ["All", "Education", "Entertainment", "Gaming", "Health"];
 
 function Home() {
-
-
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredVideos =
@@ -36,10 +54,7 @@ function Home() {
     <div className="App">
       <h2>YouTube</h2>
       <div className="category-buttons">
-        {/* <button className="toggle-button">
-          <FaBars   />
-          </button> */}
-         <Side />
+        <Side />
 
         {categories.map((category) => (
           <button
@@ -53,27 +68,6 @@ function Home() {
       </div>
 
       <div className="home">
-        <div>
-          {/* <ul className="menu">
-        <li>
-          <FaHome />
-          {!isSidebarCollapsed && <span>Home</span>}
-        </li>
-        <li>
-          <FaFire />
-          {!isSidebarCollapsed && <span>Trending</span>}
-        </li>
-        <li>
-          <FaPlayCircle />
-          {!isSidebarCollapsed && <span>Subscriptions</span>}
-        </li>
-        <li>
-          <FaHeart />
-          {!isSidebarCollapsed && <span>Liked Videos</span>}
-        </li>
-      </ul> */}
-        </div>
-
         <div className="video-list">
           {filteredVideos.map((video) => (
             <div className="video-item">
@@ -86,6 +80,14 @@ function Home() {
             </div>
           ))}
         </div>
+      </div>
+
+
+      <div className="nav">
+
+
+
+        <h1>Home</h1>
       </div>
     </div>
   );

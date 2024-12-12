@@ -42,7 +42,6 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  margin: 1px;
   gap: 20px;
 }
 p {
@@ -50,13 +49,12 @@ p {
 }
 .video-item {
   border-radius: 10px;
-  width: 100%;
 
   text-align: left;
 }
 
 .video {
-  height: 250px;
+  height: 237px;
   width: 100%;
   margin-bottom: 3px;
   border-radius: 10px;
@@ -77,11 +75,84 @@ p {
 
   display: flex;
   align-items: left;
-  justify-content:left;
+  justify-content: left;
 }
 li {
   margin: 10px;
-  /* font-size: px; */
   list-style: none;
   padding: 1rem;
+}
+
+.nav {
+  position: sticky;
+  bottom: 0;
+  background-color: #110f0f;
+  padding: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 1px;
+  gap: 20px;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 1px;
+  gap: 20px;
+}
+
+
+
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 1px;
+  gap: 20px;
+}
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 1px;
+  gap: 20px;
+}
+
+
+
 }
