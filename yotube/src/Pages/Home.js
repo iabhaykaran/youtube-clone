@@ -38,9 +38,10 @@ const videoData = [
   { id: 5, title: "Fitness Tips", category: "Health" },
   { id: 5, title: "Fitness Tips", category: "Health" },
   { id: 5, title: "Fitness Tips", category: "Health" },
+  { id: 5, title: "Fitness Tips", category: "Music" },
 ];
 
-const categories = ["All", "Education", "Entertainment", "Gaming", "Health"];
+const categories = ["All", "Education", "Entertainment", "Gaming", "Health","Music"];
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -82,13 +83,13 @@ function Home() {
         </div>
       </div>
 
-
+{/* 
       <div className="nav">
 
 
 
         <h1>Home</h1>
-      </div>
+      </div> */}
     </div>
   );
 }

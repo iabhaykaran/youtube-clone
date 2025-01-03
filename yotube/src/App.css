@@ -80,6 +80,7 @@ p {
 li {
   margin: 10px;
   list-style: none;
+  font-size: 17px;
   padding: 1rem;
 }
 

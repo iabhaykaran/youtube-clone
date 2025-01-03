@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Sidebar } from "primereact/sidebar";
-import { FaHome, FaFire, FaPlayCircle, FaHeart } from "react-icons/fa";
+import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
+import { SiYoutubeshorts } from "react-icons/si";
+
+import { MdOutlineLiveTv } from "react-icons/md";
 import "../App.css";
 import { Link } from "react-router-dom";
 
@@ -18,9 +21,8 @@ export default function Side() {
         <h2>YouTube</h2>
 
         <div className="menu">
-          <ul >
+          <ul>
             <h4>
-
               {/* <li>
                 <Link to="home">
               <FaHome />
@@ -28,23 +30,58 @@ export default function Side() {
                 </Link> 
             </li> */}
               <li>
-              <FaHome />
-               {<span>Home</span>}
-            </li>
-            <li>
+                <FaHome />
+                {<span>Home</span>}
+              </li>
+              <li>
                 <Link to="trending">
-              <FaFire />
-              <span>Trending</span>
-                </Link> 
-            </li>
-            <li>
-              <FaPlayCircle />
-              <span>Subscriptions</span>
-            </li>
-            <li>
-              <FaHeart />
-              {<span>Liked Videos</span>}
-            </li>
+                  <SiYoutubeshorts />
+                  <span>Shorts</span>
+                </Link>
+              </li>
+              <li>
+                <FaPlayCircle />
+                <span>Subscriptions</span>
+              </li>
+              <hr />
+              <li>
+                <FaHeart />
+                {<span>History</span>}
+              </li>
+              <li>
+                <FaHeart />
+                {<span>Playlists</span>}
+              </li>
+              <li>
+                <FaHeart />
+                {<span>Watch Later</span>}
+              </li>
+              <li>
+                <FaHeart />
+                {<span>Liked Videos</span>}
+              </li>
+              <hr />
+              <li>
+                <FaFire />
+                {/* <FaHeart /> */}
+                {<span>Trending</span>}
+              </li>
+              <li>
+                <FaHeart />
+                {<span>Shopping</span>}
+              </li>
+              <li>
+                <FaMusic />
+
+                {<span>Music</span>}
+              </li>
+              <li>
+                <MdOutlineLiveTv />
+                {<span>Films</span>}
+              </li>
+              <li>{<span>Live</span>}</li>
+              <li>{<span>Gaming</span>}</li>
+              <li>{<span>News</span>}</li>
             </h4>
           </ul>
         </div>
