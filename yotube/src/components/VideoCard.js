@@ -8,7 +8,7 @@ export default function VideoCard(props) {
 
       <div>
         <h3>{props.title}</h3>
-        <p>{ props.chname} . {props.views}K views . 3 weeks ago </p>
+        <p>{ props.chname} . {props.views} views . 3 weeks ago </p>
       </div>
     </div>
   );

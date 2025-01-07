@@ -9,14 +9,14 @@ export default function R() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        
-        {/* <Route path="/home" element={<Home/>} /> */}
-        <Route path="/trending" element={<Trending/>} />
+        <Route path="/" element={<Home />} />
 
-        {/* <Route index element={""} /> */}
-        {/* <Route path="blogs" element={""} /> */}
-        {/* <Route path="contact" element={""} /> */}
+        {/* <Route path="/home" element={<Home/>} /> */}
+        <Route path="/trending" element={<Trending />} />
+        <Route path="/subscription" element={<Trending />} />
+        <Route path="/liked-videos" element={<Trending />} />
+        <Route path="/history" element={<Trending />} />
+
         {/* <Route path="*" element={ ""} /> */}
       </Routes>
     </div>

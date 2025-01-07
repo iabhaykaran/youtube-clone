@@ -3,7 +3,6 @@ import { Sidebar } from "primereact/sidebar";
 import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
-
 import { MdOutlineLiveTv } from "react-icons/md";
 import "../App.css";
 import { Link } from "react-router-dom";
@@ -18,20 +17,16 @@ export default function Side() {
         visible={visible}
         onHide={() => setVisible(false)}
       >
-        <h2>YouTube</h2>
+        <h2>EwwTube</h2>
 
         <div className="menu">
           <ul>
             <h4>
-              {/* <li>
-                <Link to="home">
-              <FaHome />
-               {<span>Home</span>}
-                </Link> 
-            </li> */}
               <li>
-                <FaHome />
-                {<span>Home</span>}
+                <div>
+                  <FaHome />
+                </div>
+                <div>{<span>Home</span>}</div>
               </li>
               <li>
                 <Link to="trending">
@@ -40,8 +35,10 @@ export default function Side() {
                 </Link>
               </li>
               <li>
-                <FaPlayCircle />
-                <span>Subscriptions</span>
+                <Link to="subscription">
+                  <FaPlayCircle />
+                  <span>Subscriptions</span>
+                </Link>
               </li>
               <hr />
               <li>

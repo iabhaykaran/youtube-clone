@@ -10,11 +10,19 @@ const videoData = [
     id: 1,
     title: "React Tutorial",
     category: "Education",
-    views: 233,
+    views: `233K`,
     chname: "Tech Burner",
   },
 
-  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
+  {
+    id: 2,
+    title: "Top 10 Movies",
+    category: "Entertainment",
+    views: `100M`,
+    chname: "Royal Me",
+  },
+
+
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
@@ -41,7 +49,14 @@ const videoData = [
   { id: 5, title: "Fitness Tips", category: "Music" },
 ];
 
-const categories = ["All", "Education", "Entertainment", "Gaming", "Health","Music"];
+const categories = [
+  "All",
+  "Education",
+  "Entertainment",
+  "Gaming",
+  "Health",
+  "Music",
+];
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -53,7 +68,7 @@ function Home() {
 
   return (
     <div className="App">
-      <h2>YouTube</h2>
+      <h2 className="app-name">EewTube</h2>
       <div className="category-buttons">
         <Side />
 
@@ -83,7 +98,7 @@ function Home() {
         </div>
       </div>
 
-{/* 
+      {/* 
       <div className="nav">
 
 
