@@ -1,6 +1,7 @@
 import "../App.css";
 import React, { useState } from "react";
 import VideoCard from "../components/VideoCard";
+import Nav from "./Nav";
 // import { FaHome, FaFire, FaPlayCircle, FaHeart, FaBars } from "react-icons/fa";
 
 import Side from "./Side";
@@ -21,7 +22,6 @@ const videoData = [
     views: `100M`,
     chname: "Royal Me",
   },
-
 
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
   { id: 2, title: "Top 10 Movies", category: "Entertainment" },
@@ -68,7 +68,7 @@ function Home() {
 
   return (
     <div className="App">
-      <h2 className="app-name">EewTube</h2>
+      <Nav />
       <div className="category-buttons">
         <Side />
 

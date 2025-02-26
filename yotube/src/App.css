@@ -23,7 +23,7 @@
 }
 
 .app-name {
-  color: rgb(255, 59, 59);
+  color: rgb(240, 239, 239);
 }
 
 .category-buttons button {
@@ -61,11 +61,11 @@ p {
   height: 237px;
   width: 100%;
   margin-bottom: 3px;
-  border-radius: 10px;
-  background-color: #f77183;
+  border-radius: 5px;
+  background-color: #878485;
 }
 p {
-  color: #7f7d7d;
+  color: #a3a2a2;
 }
 
 .sidebar {

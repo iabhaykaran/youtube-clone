@@ -17,7 +17,7 @@ export default function Side() {
         visible={visible}
         onHide={() => setVisible(false)}
       >
-        <h2>EwwTube</h2>
+        <h2>YouTube</h2>
 
         <div className="menu">
           <ul>
@@ -29,9 +29,17 @@ export default function Side() {
                 <div>{<span>Home</span>}</div>
               </li>
               <li>
+                <Link to="Shorts">
+                  <SiYoutubeshorts />
+
+                  <span>Shorts</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="trending">
                   <SiYoutubeshorts />
-                  <span>Shorts</span>
+
+                  <span>Trending</span>
                 </Link>
               </li>
               <li>
@@ -46,11 +54,11 @@ export default function Side() {
                 {<span>History</span>}
               </li>
               <li>
-                <FaHeart />
+                {/* <FaHeart /> */}
                 {<span>Playlists</span>}
               </li>
               <li>
-                <FaHeart />
+                {/* <FaHeart /> */}
                 {<span>Watch Later</span>}
               </li>
               <li>

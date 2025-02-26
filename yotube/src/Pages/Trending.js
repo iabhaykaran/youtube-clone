@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Trending() {
   return (
     <div>
-      Trending
+      <h1>Trending Page</h1>
     </div>
-  )
+  );
 }
