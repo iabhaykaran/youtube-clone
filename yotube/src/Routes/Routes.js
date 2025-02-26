@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../Pages/Home";
+import { Link } from "react-router-dom";
 // import  Side  from "../Pages/Side";
 import Trending from "../Pages/Trending";
 // import Nav from "../Pages/Nav";
@@ -24,15 +25,51 @@ export default function R() {
 
         {/* <Route path="*" element={ ""} /> */}
       </Routes>
-        <hr/>
-        <div style={{display:"flex",justifyContent:"space-evenly",padding:"18px"}} className="nav">
-        <p>Home</p>
-        <p>Shorts</p>
-        <p>Upload</p>
-        <p>Subscription</p>
-        <p>You</p>
+      <hr />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          padding: "15px",
+        }}
+        className="nav"
+      >
+        <p>
+          <Link to="Shorts">
+            {/* <SiYoutubeshorts /> */}
 
-        </div>
+            <span>Home</span>
+          </Link>
+        </p>
+        <p>
+          <Link to="Shorts">
+            {/* <SiYoutubeshorts /> */}
+
+            <span>Shorts</span>
+          </Link>
+        </p>
+        <p>
+          <Link to="Shorts">
+            {/* <SiYoutubeshorts /> */}
+
+            <span>Upload</span>
+          </Link>
+        </p>
+        <p>
+          <Link to="Shorts">
+            {/* <SiYoutubeshorts /> */}
+
+            <span>Subscribed</span>
+          </Link>
+        </p>
+        <p>
+          <Link to="Shorts">
+            {/* <SiYoutubeshorts /> */}
+
+            <span>You</span>
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }
