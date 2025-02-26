@@ -24,6 +24,15 @@ export default function R() {
 
         {/* <Route path="*" element={ ""} /> */}
       </Routes>
+        <hr/>
+        <div style={{display:"flex",justifyContent:"space-evenly",padding:"18px"}} className="nav">
+        <p>Home</p>
+        <p>Shorts</p>
+        <p>Upload</p>
+        <p>Subscription</p>
+        <p>You</p>
+
+        </div>
     </div>
   );
 }

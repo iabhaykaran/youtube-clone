@@ -92,8 +92,14 @@ li {
 .nav {
   position: sticky;
   bottom: 0;
-  background-color: #110f0f;
+  background-color: #1e1d1d;
   padding: 10px;
+
+}
+.nav p{
+
+  color: #ebeaea;
+  
 }
 
 menu,
@@ -130,6 +136,9 @@ li {
     margin: 1px;
     gap: 20px;
   }
+  .nav {
+    visibility: hidden;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -141,6 +150,12 @@ li {
     margin: 1px;
     gap: 20px;
   }
+  .nav {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: hidden;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -151,5 +166,8 @@ li {
     width: 100%;
     margin: 1px;
     gap: 20px;
+  }
+  .nav {
+    visibility: hidden;
   }
 }

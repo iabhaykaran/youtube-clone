@@ -98,13 +98,8 @@ function Home() {
         </div>
       </div>
 
-      {/* 
-      <div className="nav">
-
-
-
-        <h1>Home</h1>
-      </div> */}
+      
+   
     </div>
   );
 }
