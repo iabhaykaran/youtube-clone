@@ -6,8 +6,8 @@ const SmallvdoFlex = (props) => {
       <div className="flex-small-vdo-box">
         <div className="flex-vdo"></div>
 
-        <div>
-          <p className="flex-small-vdo-content">{props.title}</p>
+        <div className="flex-small-vdo-content">
+          <p className="">{props.title}</p>
         </div>
       </div>
     </div>

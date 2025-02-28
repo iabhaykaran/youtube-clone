@@ -16,7 +16,7 @@ const WatchHistory = () => {
           marginBottom: "10px",
           display: "flex",
           gap: "5px",
-          // justifyContent: "space-between",
+        
         }}
       >
         <img src="j.jpg" width="22px" height="20px" alt="d" />

@@ -213,19 +213,22 @@ li {
 
 .flex-small-vdo-box {
   width: 100%;
+  /* background-color: aquamarine; */
   display: flex;
 }
 
 .flex-vdo {
-  width:350px;
+  width: 50%;
   height: 90px;
   border-radius: 8px;
-  background-color: #918f8f;
+  background-color: #6d6d6d;
   margin-bottom: 10px;
 }
 .flex-small-vdo-content {
   margin-left: 10px;
-  color: #ffffff;
-  font-size: small;
+  font-size: smaller;
   width: 50%;
+}
+.flex-small-vdo-content p {
+  color: #f1eaea;
 }
