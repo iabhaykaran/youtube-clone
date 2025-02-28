@@ -5,7 +5,7 @@ import SmallVideoCard from "../components/SmallVideoCard";
 
 const Profile = (props) => {
   return (
-    <div style={{ height: "93vh",overflow:"hidden" }}>
+    <div style={{ height: "93vh", overflow: "hidden" }}>
       <div style={{ padding: "10px", marginTop: "20px" }}>
         <div style={{ marginBottom: "30px", display: "flex" }}>
           <div>
@@ -37,14 +37,17 @@ const Profile = (props) => {
         </div>
 
         <div
+          className="scroll-none"
           style={{
             display: "flex",
             justifyContent: "space-around",
             gap: "8px",
+            overflowX: "scroll",
           }}
         >
           <SmallVideoCard title="Zindagi Ke Safar Mein Guzar Jaate | Kishor.." />
           <SmallVideoCard title="Higa tumse pyara kaon  | Arijit singh and shreya.." />
+          <SmallVideoCard title="hamko hami se chura lo  | Karan Johar and shah.." />
           <SmallVideoCard title="hamko hami se chura lo  | Karan Johar and shah.." />
         </div>
         <br />
@@ -59,7 +62,6 @@ const Profile = (props) => {
         >
           <h3>Playlists</h3>
           {/* <button className="Viewall-btn">View All</button> */}
-       
 
           <a className="Viewall-btn" href="watchhistory">
             View All
@@ -67,15 +69,18 @@ const Profile = (props) => {
         </div>
 
         <div
+          className="scroll-none"
           style={{
             display: "flex",
             justifyContent: "space-around",
             gap: "8px",
+            overflowX: "scroll",
           }}
         >
           <SmallVideoCard title="Liked videos" />
           <SmallVideoCard title="Watch Later" />
           <SmallVideoCard title="Gameplay" />
+          <SmallVideoCard title="Music" />
         </div>
         <br />
         <br />
