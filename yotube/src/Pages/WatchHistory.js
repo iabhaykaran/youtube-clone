@@ -15,8 +15,8 @@ const WatchHistory = () => {
         style={{
           marginBottom: "10px",
           display: "flex",
+
           gap: "5px",
-        
         }}
       >
         <img src="j.jpg" width="22px" height="20px" alt="d" />
@@ -26,7 +26,14 @@ const WatchHistory = () => {
         </a> */}
       </div>
 
-      <div style={{ display: "flex", gap: "10px", overflow: "hidden" }}>
+      <div className="scroll-none" style={{ display: "flex", gap: "10px", overflow: "scroll" }}>
+        <SmallShort />
+        <SmallShort />
+        <SmallShort />
+        <SmallShort />
+        <SmallShort />
+        <SmallShort />
+        <SmallShort />
         <SmallShort />
         <SmallShort />
         <SmallShort />
