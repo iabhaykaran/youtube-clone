@@ -1,6 +1,6 @@
 import React from "react";
 import SmallVideoCard from "../components/SmallVideoCard";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import VideoCard from "../components/VideoCard";
 
 const Profile = (props) => {
@@ -31,10 +31,9 @@ const Profile = (props) => {
           }}
         >
           <h3>History</h3>
-          {/* <button className="Viewall-btn">View All</button> */}
-          <Link className="Viewall-btn" to="">
+          <a className="Viewall-btn" href="watchhistory">
             View All
-          </Link>
+          </a>
         </div>
 
         <div
@@ -60,9 +59,11 @@ const Profile = (props) => {
         >
           <h3>Playlists</h3>
           {/* <button className="Viewall-btn">View All</button> */}
-          <Link className="Viewall-btn" to="">
+       
+
+          <a className="Viewall-btn" href="watchhistory">
             View All
-          </Link>
+          </a>
         </div>
 
         <div
@@ -78,13 +79,6 @@ const Profile = (props) => {
         </div>
         <br />
         <br />
-
-        
-
-
-
-        
-        
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import Shorts from "../Pages/Shorts";
 import Subscription from "../Pages/Subscription";
 import Uploads from "./Uploads";
 import Profile from "../Pages/Profile";
+import WatchHistory from "../Pages/WatchHistory";
 // import VideoCard from "../components/VideoCard";
 
 export default function R() {
@@ -21,6 +22,7 @@ export default function R() {
         <Route path="/home" element={<Home />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/uploads" element={<Uploads />} />
+        <Route path="/watchhistory" element={<WatchHistory/>} />
 
         <Route path="/shorts" element={<Shorts />} />
         <Route path="/subscription" element={<Subscription />} />
