@@ -2,8 +2,8 @@ import React from "react";
 
 const Subscription = () => {
   return (
-    <div style={{height:"100vh"}}>
-      <h1>Subscription</h1>
+    <div style={{height:"100vh",padding:"10px"}}>
+      <h2>Subscription</h2>
     </div>
   );
 };

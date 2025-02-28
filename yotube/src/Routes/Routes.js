@@ -2,15 +2,14 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../Pages/Home";
 import { Link } from "react-router-dom";
-// import  Side  from "../Pages/Side";
 import Trending from "../Pages/Trending";
-// import Nav from "../Pages/Nav";
+
 import Shorts from "../Pages/Shorts";
 import Subscription from "../Pages/Subscription";
-import Uploads from "./Uploads";
+
 import Profile from "../Pages/Profile";
 import WatchHistory from "../Pages/WatchHistory";
-// import VideoCard from "../components/VideoCard";
+import Uploads from "../Pages/Uploads";
 
 export default function R() {
   return (
@@ -22,7 +21,7 @@ export default function R() {
         <Route path="/home" element={<Home />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/uploads" element={<Uploads />} />
-        <Route path="/watchhistory" element={<WatchHistory/>} />
+        <Route path="/watchhistory" element={<WatchHistory />} />
 
         <Route path="/shorts" element={<Shorts />} />
         <Route path="/subscription" element={<Subscription />} />
