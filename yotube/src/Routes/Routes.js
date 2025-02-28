@@ -7,6 +7,8 @@ import Trending from "../Pages/Trending";
 // import Nav from "../Pages/Nav";
 import Shorts from "../Pages/Shorts";
 import Subscription from "../Pages/Subscription";
+import Uploads from "./Uploads";
+import Profile from "../Pages/Profile";
 // import VideoCard from "../components/VideoCard";
 
 export default function R() {
@@ -16,11 +18,13 @@ export default function R() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        {/* <Route path="/home" element={<Home/>} /> */}
+        <Route path="/home" element={<Home />} />
         <Route path="/trending" element={<Trending />} />
+        <Route path="/uploads" element={<Uploads />} />
+
         <Route path="/shorts" element={<Shorts />} />
         <Route path="/subscription" element={<Subscription />} />
-        <Route path="/liked-videos" element={<Trending />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/history" element={<Trending />} />
 
         {/* <Route path="*" element={ ""} /> */}
@@ -35,7 +39,7 @@ export default function R() {
         className="nav"
       >
         <p>
-          <Link to="Shorts">
+          <Link to="home">
             {/* <SiYoutubeshorts /> */}
 
             <span>Home</span>
@@ -49,21 +53,21 @@ export default function R() {
           </Link>
         </p>
         <p>
-          <Link to="Shorts">
+          <Link to="uploads">
             {/* <SiYoutubeshorts /> */}
 
             <span>Upload</span>
           </Link>
         </p>
         <p>
-          <Link to="Shorts">
+          <Link to="subscription">
             {/* <SiYoutubeshorts /> */}
 
             <span>Subscribed</span>
           </Link>
         </p>
         <p>
-          <Link to="Shorts">
+          <Link to="profile">
             {/* <SiYoutubeshorts /> */}
 
             <span>You</span>

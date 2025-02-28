@@ -2,10 +2,8 @@ import React from "react";
 
 const Shorts = () => {
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <h1>Shorts</h1>
-
-      <p>Shorts</p>
     </div>
   );
 };

@@ -94,12 +94,10 @@ li {
   bottom: 0;
   background-color: #1e1d1d;
   /* padding: 10px; */
-
 }
-.nav p{
-font-weight: 500;
+.nav p {
+  font-weight: 500;
   color: #fff7f7;
-  
 }
 
 menu,
@@ -170,4 +168,20 @@ li {
   .nav {
     visibility: hidden;
   }
+}
+
+/*------------------- prfile page styling---
+
+-------------------------------
+---------------------------------X------------------------- */
+.his-video {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  background-color: #878485;
+  width: 150px;
+}
+.vdo {
+  margin-right: 10px;
 }
