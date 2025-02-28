@@ -4,7 +4,7 @@ import SmallShort from "../components/SmallShort";
 import SmallvdoFlex from "../components/SmallvdoFlex";
 const WatchHistory = () => {
   return (
-    <div style={{ padding: "10px", height: "100vh", overflow: "scroll" }}>
+    <div className="scroll-none" style={{    padding: "10px", height: "100vh", overflow: "scroll" }}>
       <h2>History</h2>
       <br />
 

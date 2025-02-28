@@ -7,8 +7,10 @@ export default function VideoCard(props) {
       <div className="video"></div>
 
       <div>
-        <h3>{props.title}</h3>
-        <p>{ props.chname} . {props.views} views . 3 weeks ago </p>
+        <h4>{props.title}</h4>
+        <p style={{ fontSize: "small" }}>
+          {props.chname} . {props.views} views . 3 weeks ago{" "}
+        </p>
       </div>
     </div>
   );
