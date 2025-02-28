@@ -170,10 +170,7 @@ li {
   }
 }
 
-/*------------------- prfile page styling---
-
--------------------------------
----------------------------------X------------------------- */
+/*------------------- prfile page styling-------------------------- */
 .his-video {
   height: 100px;
   width: 100%;
@@ -182,6 +179,25 @@ li {
   background-color: #878485;
   width: 150px;
 }
+
+.his-p {
+  color: #ebeaea;
+  font-size: small;
+}
+
 .vdo {
   margin-right: 10px;
+}
+.Viewall-btn {
+  color: #ffffff;
+  font-size: small;
+  border: 1.5px solid rgb(177, 172, 172);
+  padding: 5px 8px;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.dp{
+  border-radius: 100%;
+  margin-right:11px;
 }

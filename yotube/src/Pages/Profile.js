@@ -1,56 +1,90 @@
 import React from "react";
+import SmallVideoCard from "../components/SmallVideoCard";
+import { Link } from "react-router-dom";
 // import VideoCard from "../components/VideoCard";
 
 const Profile = (props) => {
   return (
     <div style={{ height: "100vh" }}>
-      <div style={{ marginBottom: "20px" }}>
-        <h1>Abhaykaran</h1>
-        <p>@iamabhaykaran. view channel</p>
-        <div style={{ display: "flex" }}>
-          <button>switch account</button>
-          <button>switch account</button>
+      <div style={{ padding: "10px", marginTop: "20px" }}>
+        <div style={{ marginBottom: "30px", display: "flex" }}>
+          <div>
+            {" "}
+            <img
+              src="dp.jpg"
+              alt="#"
+              height="60px"
+              width="60px"
+              className="dp"
+            />
+          </div>
+          <div>
+            <h2>AbhayKaran</h2>
+            <p>@iamabhaykaran . view channel</p>
+          </div>
         </div>
-      </div>
-      <div style={{ padding: "" }}>
-        <h4>History</h4>
+        <div
+          style={{
+            marginBottom: "10px",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <h3>History</h3>
+          {/* <button className="Viewall-btn">View All</button> */}
+          <Link className="Viewall-btn" to="">
+            View All
+          </Link>
+        </div>
 
         <div
-          style={{ display: "flex", padding: "5px" }}
-          className="history-VideoCard"
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            gap: "8px",
+          }}
         >
-          <div className="vdo">
-            <div className="his-video"></div>
-
-            <div>
-              <h3>{props.title}</h3>
-              <p style={{ color: "white" }}>
-                Tech panda x kanzani sundown Set-Trim..
-                {/* {props.chname} . {props.views} views . 3 weeks ago{" "} */}
-              </p>
-            </div>
-          </div>
-          <div className="vdo">
-            <div className="his-video"></div>
-
-            <div>
-              <h3>{props.title}</h3>
-              <p>
-                {props.chname} . {props.views} views . 3 weeks ago{" "}
-              </p>
-            </div>
-          </div>
-          <div className="vdo">
-            <div className="his-video"></div>
-
-            <div>
-              <h3>{props.title}</h3>
-              <p>
-                {props.chname} . {props.views} views . 3 weeks ago{" "}
-              </p>
-            </div>
-          </div>
+          <SmallVideoCard title="Zindagi Ke Safar Mein Guzar Jaate | Kishor.." />
+          <SmallVideoCard title="Higa tumse pyara kaon  | Arijit singh and shreya.." />
+          <SmallVideoCard title="hamko hami se chura lo  | Karan Johar and shah.." />
         </div>
+        <br />
+        <br />
+        <br />
+        <div
+          style={{
+            marginBottom: "10px",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <h3>Playlists</h3>
+          {/* <button className="Viewall-btn">View All</button> */}
+          <Link className="Viewall-btn" to="">
+            View All
+          </Link>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            gap: "8px",
+          }}
+        >
+          <SmallVideoCard title="Liked videos" />
+          <SmallVideoCard title="Watch Later" />
+          <SmallVideoCard title="Gameplay" />
+        </div>
+        <br />
+        <br />
+
+        
+
+
+
+        
+        
       </div>
     </div>
   );
