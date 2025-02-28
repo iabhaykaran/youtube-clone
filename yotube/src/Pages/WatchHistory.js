@@ -15,9 +15,11 @@ const WatchHistory = () => {
         style={{
           marginBottom: "10px",
           display: "flex",
-          justifyContent: "space-between",
+          gap: "5px",
+          // justifyContent: "space-between",
         }}
       >
+        <img src="j.jpg" width="22px" height="20px" alt="d" />
         <h3>Shorts</h3>
         {/* <a className="Viewall-btn" href="watchhistory">
           View All
