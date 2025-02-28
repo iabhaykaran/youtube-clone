@@ -5,7 +5,7 @@ import SmallVideoCard from "../components/SmallVideoCard";
 
 const Profile = (props) => {
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "93vh",overflow:"hidden" }}>
       <div style={{ padding: "10px", marginTop: "20px" }}>
         <div style={{ marginBottom: "30px", display: "flex" }}>
           <div>
