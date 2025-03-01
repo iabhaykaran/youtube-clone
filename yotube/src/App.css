@@ -126,7 +126,7 @@
 .category-buttons {
   margin: 10px 0;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 .home {

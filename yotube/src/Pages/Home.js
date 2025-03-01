@@ -69,7 +69,7 @@ function Home() {
   return (
     <div className="App">
       <Nav />
-      <div className="category-buttons">
+      <div  className="category-buttons  scroll-none">
         <Side />
 
         {categories.map((category) => (
