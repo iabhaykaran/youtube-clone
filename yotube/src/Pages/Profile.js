@@ -40,7 +40,7 @@ const Profile = (props) => {
           className="scroll-none"
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            // justifyContent: "space-around",
             gap: "8px",
             overflowX: "scroll",
           }}
@@ -72,7 +72,7 @@ const Profile = (props) => {
           className="scroll-none"
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            // justifyContent: "space-around",
             gap: "8px",
             overflowX: "scroll",
           }}
