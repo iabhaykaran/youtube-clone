@@ -4,7 +4,10 @@ import SmallShort from "../components/SmallShort";
 import SmallvdoFlex from "../components/SmallvdoFlex";
 const WatchHistory = () => {
   return (
-    <div className="scroll-none" style={{    padding: "10px", height: "100vh", overflow: "scroll" }}>
+    <div
+      className="scroll-none"
+      style={{ padding: "10px", height: "100vh", overflow: "scroll" }}
+    >
       <h2>History</h2>
       <br />
 
@@ -26,7 +29,10 @@ const WatchHistory = () => {
         </a> */}
       </div>
 
-      <div className="scroll-none" style={{ display: "flex", gap: "10px", overflow: "scroll" }}>
+      <div
+        className="scroll-none"
+        style={{ display: "flex", gap: "10px", overflow: "scroll" }}
+      >
         <SmallShort />
         <SmallShort />
         <SmallShort />

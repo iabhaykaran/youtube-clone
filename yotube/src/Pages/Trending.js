@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Trending() {
   return (
-    <div>
+    <div >
       <h1>Trending Page</h1>
     </div>
   );

@@ -4,7 +4,7 @@ import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
 import { MdOutlineLiveTv } from "react-icons/md";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../App.css";
 
 export default function Side() {
@@ -22,50 +22,52 @@ export default function Side() {
         <div className="menu">
           <ul>
             <h4>
-              <li>
-                <div>
-                  <FaHome />
-                </div>
-                <div>{<span>Home</span>}</div>
-              </li>
-              <li>
-                <Link to="Shorts">
-                  <SiYoutubeshorts />
+              <div className="side-hidden-small">
+                <li>
+                  <div>
+                    <FaHome />
+                  </div>
+                  <div>{<span>Home</span>}</div>
+                </li>
+                <li>
+                  <a href="shorts">
+                    <SiYoutubeshorts />
 
-                  <span>Shorts</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="trending">
-                  <SiYoutubeshorts />
+                    <span>Shorts</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="trending">
+                    <SiYoutubeshorts />
 
-                  <span>Trending</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="subscription">
-                  <FaPlayCircle />
-                  <span>Subscriptions</span>
-                </Link>
-              </li>
-              <hr />
-              <li>
-                <FaHeart />
-                {<span>History</span>}
-              </li>
-              <li>
-                {/* <FaHeart /> */}
-                {<span>Playlists</span>}
-              </li>
-              <li>
-                {/* <FaHeart /> */}
-                {<span>Watch Later</span>}
-              </li>
-              <li>
-                <FaHeart />
-                {<span>Liked Videos</span>}
-              </li>
-              <hr />
+                    <span>Trending</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="subscription">
+                    <FaPlayCircle />
+                    <span>Subscriptions</span>
+                  </a>
+                </li>
+                <hr />
+                <li>
+                  <FaHeart />
+                  {<span>History</span>}
+                </li>
+                <li>
+                  {/* <FaHeart /> */}
+                  {<span>Playlists</span>}
+                </li>
+                <li>
+                  {/* <FaHeart /> */}
+                  {<span>Watch Later</span>}
+                </li>
+                <li>
+                  <FaHeart />
+                  {<span>Liked Videos</span>}
+                </li>
+                <hr />
+              </div>
               <li>
                 <FaFire />
                 {/* <FaHeart /> */}

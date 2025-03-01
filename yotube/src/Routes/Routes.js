@@ -11,6 +11,10 @@ import Profile from "../Pages/Profile";
 import WatchHistory from "../Pages/WatchHistory";
 import Uploads from "../Pages/Uploads";
 
+// import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
+// import { SiYoutubeshorts } from "react-icons/si";
+
 export default function R() {
   return (
     <div>
@@ -35,42 +39,32 @@ export default function R() {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          padding: "15px",
+          padding: "10px",
         }}
         className="nav"
       >
         <p>
           <Link to="home">
-            {/* <SiYoutubeshorts /> */}
-
             <span>Home</span>
           </Link>
         </p>
         <p>
           <Link to="Shorts">
-            {/* <SiYoutubeshorts /> */}
-
             <span>Shorts</span>
           </Link>
         </p>
         <p>
           <Link to="uploads">
-            {/* <SiYoutubeshorts /> */}
-
-            <span>Upload</span>
+            <img src="uplo.png" height="35px" width="35px"  alt="#"/>
           </Link>
         </p>
         <p>
           <Link to="subscription">
-            {/* <SiYoutubeshorts /> */}
-
             <span>Subscribed</span>
           </Link>
         </p>
         <p>
           <Link to="profile">
-            {/* <SiYoutubeshorts /> */}
-
             <span>You</span>
           </Link>
         </p>
