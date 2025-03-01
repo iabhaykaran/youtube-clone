@@ -55,7 +55,7 @@ export default function R() {
         </p>
         <p>
           <Link to="uploads">
-            <img src="uplo.png" height="35px" width="35px"  alt="#"/>
+            <img src="icon.webp" height="35px" width="35px"  alt="#"/>
           </Link>
         </p>
         <p>

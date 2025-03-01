@@ -5,7 +5,17 @@ import SmallVideoCard from "../components/SmallVideoCard";
 
 const Profile = (props) => {
   return (
-    <div style={{ height: "93vh", overflow: "hidden" }}>
+    <div style={{ height: "100%", overflowY: "scroll" }}>
+      <div
+        style={{
+          display: "flex",
+          padding: "5px 10px",
+          justifyContent: "flex-end",
+          gap: "10px",
+        }}
+      >
+        <a href="k">Setting</a>
+      </div>
       <div style={{ padding: "10px", marginTop: "20px" }}>
         <div style={{ marginBottom: "30px", display: "flex" }}>
           <div>
@@ -85,6 +95,21 @@ const Profile = (props) => {
         <br />
         <br />
       </div>
+      <div style={{ padding: "20px", borderBottom: "1px solid grey",borderTop:"1px solid grey" }}>
+        <p style={{ color: "white", padding: "10px" }}>Your Movies</p>
+        <p style={{ color: "white", padding: "10px" }}>Get YouTube Premium</p>
+        {/* <p style={{ color: "white", padding: "10px" }}>Your Movies</p>
+         */}
+      </div>
+      <div style={{ padding: "20px", borderBottom: "0px solid white" }}>
+        <p style={{ color: "white", padding: "10px" }}>Time Watched</p>
+        <p style={{ color: "white", padding: "10px" }}>Help and feedback</p>
+        {/* <p style={{ color: "white", padding: "10px" }}>Your Movies</p>
+         */}
+      </div>
+
+
+      
     </div>
   );
 };

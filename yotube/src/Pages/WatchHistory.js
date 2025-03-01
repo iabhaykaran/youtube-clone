@@ -8,6 +8,8 @@ const WatchHistory = () => {
       className="scroll-none"
       style={{ padding: "10px", height: "100vh", overflow: "scroll" }}
     >
+
+  
       <h2>History</h2>
       <br />
 
