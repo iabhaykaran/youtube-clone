@@ -67,7 +67,7 @@ function Home() {
       : videoData.filter((video) => video.category === selectedCategory);
 
   return (
-    <div className="App scroll-none">
+    <div style={{ padding: "10px" }} className="App scroll-none">
       <Nav />
       <div className="category-buttons  scroll-none">
         <Side />
@@ -83,8 +83,8 @@ function Home() {
         ))}
       </div>
 
-      <div className="home">
-        <div style={{ padding: "10px" }} className="video-list">
+      <div style={{ padding: "0px" }} className="home">
+        <div style={{ padding: "0px" }} className="video-list">
           {filteredVideos.map((video) => (
             <div className="video-item">
               <VideoCard
