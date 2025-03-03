@@ -1,13 +1,20 @@
 import React from "react";
-
+import Reel from "./Reel";
 const Shorts = () => {
   return (
-    <div style={{ height: "100vh", padding: "10px" }}>
-      {/* <a href="home">
-        <span>Back</span>
-      </a> */}
-
-      <h2>Shorts</h2>
+    <div>
+      <div>
+        <h2>Shorts</h2>
+      </div>
+      <div
+        style={{
+          height: "100%",
+          padding: "10px",
+      
+        }}
+      >
+        <Reel />
+      </div>
     </div>
   );
 };

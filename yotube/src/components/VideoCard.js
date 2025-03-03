@@ -4,7 +4,9 @@ import "../App.css";
 export default function VideoCard(props) {
   return (
     <div className="VideoCard">
-      <div className="video"></div>
+      <div className="video">
+        <img src={props.url} alt="#" width="100%" height="100%" />
+      </div>
 
       <div>
         <h4>{props.title}</h4>

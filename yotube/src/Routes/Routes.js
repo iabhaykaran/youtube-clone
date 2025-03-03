@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../Pages/Home";
 import { Link } from "react-router-dom";
 import Trending from "../Pages/Trending";
-
 import Shorts from "../Pages/Shorts";
 import Subscription from "../Pages/Subscription";
 

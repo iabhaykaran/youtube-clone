@@ -2,52 +2,12 @@ import "../App.css";
 import React, { useState } from "react";
 import VideoCard from "../components/VideoCard";
 import Nav from "./Nav";
+
+import videoData from "../Data";
+
 // import { FaHome, FaFire, FaPlayCircle, FaHeart, FaBars } from "react-icons/fa";
 
 import Side from "./Side";
-
-const videoData = [
-  {
-    id: 1,
-    title: "React Tutorial",
-    category: "Education",
-    views: `233K`,
-    chname: "Tech Burner",
-  },
-
-  {
-    id: 2,
-    title: "Top 10 Movies",
-    category: "Entertainment",
-    views: `100M`,
-    chname: "Royal Me",
-  },
-
-  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
-  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
-  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
-  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
-  { id: 2, title: "Top 10 Movies", category: "Entertainment" },
-  { id: 3, title: "JavaScript Crash Course", category: "Education" },
-  { id: 3, title: "JavaScript Crash Course", category: "Education" },
-  { id: 3, title: "JavaScript Crash Course", category: "Education" },
-  { id: 3, title: "JavaScript Crash Course", category: "Education" },
-  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
-  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
-  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
-  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
-  { id: 4, title: "Live Gaming Stream", category: "Gaming" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Health" },
-  { id: 5, title: "Fitness Tips", category: "Music" },
-];
 
 const categories = [
   "All",
@@ -89,6 +49,7 @@ function Home() {
             <div className="video-item">
               <VideoCard
                 key={video.id}
+                url={video.url}
                 title={video.title}
                 views={video.views}
                 chname={video.chname}
