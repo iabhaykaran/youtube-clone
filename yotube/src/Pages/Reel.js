@@ -29,10 +29,7 @@ const Shorts = () => {
   return (
     <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
       {ShortsData.map((video, index) => (
-        <div
-          key={video.id}
-        style={{display:"flex",margin:"auto"}}
-        >
+        <div key={video.id} style={{ display: "flex", margin: "auto" }}>
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
@@ -41,7 +38,6 @@ const Shorts = () => {
             height="650px"
             width="100%"
             loop
-            muted
             playsInline
           />
         </div>
@@ -51,13 +47,6 @@ const Shorts = () => {
 };
 
 export default Shorts;
-
-
-
-
-
-
-
 
 // // Shorts.js
 // import React, { useRef, useEffect, useState } from "react";
