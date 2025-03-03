@@ -1,17 +1,16 @@
 import React from "react";
-import Reel from "./Reel";
+import Reel from "../components/ShortsCard";
 const Shorts = () => {
   return (
-    <div>
-      <div>
-        <h2>Shorts</h2>
-      </div>
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+        padding: "10px",
+      }}
+    >
       <div
-        style={{
-          height: "100%",
-          padding: "10px",
-      
-        }}
+        style={{ display: "flex", margin: "auto", justifyContent: "center" }}
       >
         <Reel />
       </div>

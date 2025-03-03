@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Uploads = () => {
   return (
-    <div style={{height:'100vh',padding:"10px"}}> 
+    <div style={{ height: "100vh", padding: "10px" }}>
       <h2>Uploads</h2>
     </div>
-  )
-}
+  );
+};
 
-export default Uploads
+export default Uploads;

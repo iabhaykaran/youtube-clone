@@ -54,7 +54,9 @@ export default function R() {
         </p>
         <p>
           <Link to="uploads">
-            <img src="icon.webp" height="35px" width="35px"  alt="#"/>
+            Upload
+            {/* []   <img src="icon.webp" height="35px" width="35px"  alt="#"/>
+             */}
           </Link>
         </p>
         <p>

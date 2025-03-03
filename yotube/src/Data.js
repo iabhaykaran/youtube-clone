@@ -5,6 +5,7 @@ const videoData = [
     category: "Education",
     views: `233K`,
     chname: "Tech Burner",
+    // thumbnail: "https://source.unsplash.com/300x533/?beach,sunset",
     url: "video.png",
   },
 
