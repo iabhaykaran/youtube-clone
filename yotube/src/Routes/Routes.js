@@ -38,7 +38,8 @@ export default function R() {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          padding: "10px",
+          padding: "12px",
+          paddingTop:"18px"
         }}
         className="nav"
       >

@@ -6,6 +6,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { MdOutlineLiveTv } from "react-icons/md";
 // import { Link } from "react-router-dom";
 import "../App.css";
+import Nav from "./Nav";
 
 export default function Side() {
   const [visible, setVisible] = useState(false);
@@ -17,7 +18,7 @@ export default function Side() {
         visible={visible}
         onHide={() => setVisible(false)}
       >
-        <h2>YouTube</h2>
+        <Nav/>
 
         <div className="menu">
           <ul>

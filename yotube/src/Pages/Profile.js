@@ -14,7 +14,7 @@ const Profile = (props) => {
           gap: "10px",
         }}
       >
-        <a href="k">Setting</a>
+        {/* <a href="k">Setting</a> */}
       </div>
       <div style={{ padding: "10px", marginTop: "20px" }}>
         <div style={{ marginBottom: "30px", display: "flex" }}>
