@@ -124,7 +124,7 @@
 }
 
 .category-buttons {
-  margin: 10px 0;
+  margin: 8px 0;
   display: flex;
   overflow-x: scroll;
 }
@@ -138,8 +138,8 @@
 }
 
 .category-buttons button {
-  margin: 5px;
-  padding: 10px 15px;
+  margin-right: 8px;
+  padding: 8px 15px;
   border: none;
   cursor: pointer;
   font-weight: 600;

@@ -2,7 +2,6 @@ import "../App.css";
 import React, { useState } from "react";
 import VideoCard from "../components/VideoCard";
 import Nav from "./Nav";
-
 import videoData from "../Data";
 
 // import { FaHome, FaFire, FaPlayCircle, FaHeart, FaBars } from "react-icons/fa";
@@ -27,9 +26,11 @@ function Home() {
       : videoData.filter((video) => video.category === selectedCategory);
 
   return (
-    <div style={{ padding: "10px" }} className="App scroll-none">
-      <Nav />
-      <div className="category-buttons  scroll-none">
+    <div style={{ padding: "0px" }} className="App scroll-none">
+      <div style={{ marginLeft: "5px" }}>
+        <Nav />
+      </div>
+      <div style={{ marginLeft: "5px" }} className="category-buttons  scroll-none">
         <Side />
 
         {categories.map((category) => (

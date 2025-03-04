@@ -1,7 +1,6 @@
 import React from "react";
 import SmallVideoCard from "../components/SmallVideoCard";
-// import { Link } from "react-router-dom";
-// import VideoCard from "../components/VideoCard";
+
 
 const Profile = (props) => {
   return (
@@ -19,7 +18,6 @@ const Profile = (props) => {
       <div style={{ padding: "10px", marginTop: "20px" }}>
         <div style={{ marginBottom: "30px", display: "flex" }}>
           <div>
-            {" "}
             <img
               src="dp.jpg"
               alt="#"
