@@ -1,10 +1,8 @@
-// Shorts.js
 import React, { useRef, useEffect } from "react";
-// import videos from "./data";
-import ShortsData from "../ShortsData";
-// import { TbRuler3 } from "react-icons/tb";
 
-const Shorts = () => {
+import ShortsData from "../ShortsData";
+
+const Short = () => {
   const videoRefs = useRef([]);
 
   useEffect(() => {
@@ -30,15 +28,15 @@ const Shorts = () => {
   return (
     <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
       {ShortsData.map((video, index) => (
-        <div key={video.id} style={{marginBottom: "px" }}>
+        <div key={video.id} style={{ marginBottom: "px" }}>
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
-            height="650px"
+            height="700px"
             controls={false}
             loop
-            width="350px"
-            // muted
+            width="100%"
+            muted
             playsInline
           />
         </div>
@@ -47,7 +45,7 @@ const Shorts = () => {
   );
 };
 
-export default Shorts;
+export default Short;
 
 // // Shorts.js
 // import React, { useRef, useEffect, useState } from "react";

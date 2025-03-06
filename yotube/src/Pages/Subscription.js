@@ -11,7 +11,7 @@ import VideoCard from "../components/VideoCard";
 //   "Health",
 //   "Music",
 // ];
-const Subscription = () => {
+const Subscription = (props) => {
   // const [selectedCategory, setSelectedCategory] = useState("All");
 
   // const filteredVideos =

@@ -27,7 +27,7 @@ function Home() {
 
   return (
     <div style={{ padding: "0px" }} className="App scroll-none">
-      <div style={{ marginLeft: "5px" }}>
+      <div style={{ padding: "8px" }}>
         <Nav />
       </div>
       <div

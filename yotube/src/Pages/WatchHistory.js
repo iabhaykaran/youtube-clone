@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
-
 import videoData from "../Data";
 import SmallShort from "../components/SmallShort";
-import SmallvdoFlex from "../components/wtachlatedSmallvdoFlex";
+import SmallvdoFlex from "../components/wtachlaterSmallvdoFlex";
+
 const WatchHistory = () => {
   return (
     <div
