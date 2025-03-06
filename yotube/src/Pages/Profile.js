@@ -1,6 +1,6 @@
 import React from "react";
 import SmallVideoCard from "../components/SmallVideoCard";
-
+import videoData from "../Data";
 
 const Profile = (props) => {
   return (
@@ -43,22 +43,23 @@ const Profile = (props) => {
             View All
           </a>
         </div>
-
         <div
           className="scroll-none"
           style={{
             display: "flex",
             // justifyContent: "space-around",
-            gap: "8px",
+            gap: "10px",
             overflowX: "scroll",
           }}
         >
-          <SmallVideoCard title="Zindagi Ke Safar Mein Guzar Jaate | Kishor.." />
-          <SmallVideoCard title="Higa tumse pyara kaon  | Arijit singh and shreya.." />
-          <SmallVideoCard title="hamko hami se chura lo  | Karan Johar and shah.." />
-          <SmallVideoCard title="hamko hami se chura lo  | Karan Johar and shah.." />
+          {videoData.map((video) => (
+            <SmallVideoCard
+              title={video.title.slice(0, 20)}
+              thumburl={video.url}
+              vdourl={video.vdourl}
+            />
+          ))}
         </div>
-        <br />
         <br />
         <br />
         <div
@@ -93,7 +94,13 @@ const Profile = (props) => {
         <br />
         <br />
       </div>
-      <div style={{ padding: "20px", borderBottom: "1px solid grey",borderTop:"1px solid grey" }}>
+      <div
+        style={{
+          padding: "20px",
+          borderBottom: "1px solid grey",
+          borderTop: "1px solid grey",
+        }}
+      >
         <p style={{ color: "white", padding: "10px" }}>Your Movies</p>
         <p style={{ color: "white", padding: "10px" }}>Get YouTube Premium</p>
         {/* <p style={{ color: "white", padding: "10px" }}>Your Movies</p>
@@ -105,9 +112,6 @@ const Profile = (props) => {
         {/* <p style={{ color: "white", padding: "10px" }}>Your Movies</p>
          */}
       </div>
-
-
-      
     </div>
   );
 };

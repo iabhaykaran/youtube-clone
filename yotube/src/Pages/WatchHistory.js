@@ -1,15 +1,15 @@
 import React from "react";
 import "../App.css";
+
+import videoData from "../Data";
 import SmallShort from "../components/SmallShort";
-import SmallvdoFlex from "../components/SmallvdoFlex";
+import SmallvdoFlex from "../components/wtachlatedSmallvdoFlex";
 const WatchHistory = () => {
   return (
     <div
       className="scroll-none"
       style={{ padding: "10px", height: "100vh", overflow: "scroll" }}
     >
-
-  
       <h2>History</h2>
       <br />
 
@@ -35,38 +35,19 @@ const WatchHistory = () => {
         className="scroll-none"
         style={{ display: "flex", gap: "10px", overflow: "scroll" }}
       >
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
-        <SmallShort />
+        {videoData.map((video) => (
+          <SmallShort title={video.title.slice(0, 13)} thumburl={video.url} />
+        ))}
       </div>
 
       <br />
-
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
-      <SmallvdoFlex title="Mera Yaar Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar, Sonam Kapoor|Javed Bashir" />
+      {videoData.map((video) => (
+        <SmallvdoFlex
+          title={video.title}
+          thumburl={video.url}
+          vdourl={video.vdourl}
+        />
+      ))}
     </div>
   );
 };
