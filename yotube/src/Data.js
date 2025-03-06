@@ -16,7 +16,7 @@ const videoData = [
     views: `100M`,
     vdourl: "https://www.youtube.com/watch?v=L3pk_TBkihU",
     cname: "Universal Studios",
-    url: "tenet.jpeg",
+    url: "ten8.jpeg",
     // cname: "Abhay Karan",
   },
   {
