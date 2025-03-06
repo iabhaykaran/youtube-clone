@@ -26,7 +26,7 @@ const Short = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
+    <div>
       {ShortsData.map((video, index) => (
         <div key={video.id} style={{ marginBottom: "px" }}>
           <video

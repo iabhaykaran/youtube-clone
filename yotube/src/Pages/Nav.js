@@ -5,7 +5,7 @@ const Nav = () => {
         <img src="logo.png" alt="#" width="27px" height="100%" />
       </div>
       <div style={{ marginLeft: "5px"}}>
-        <h2 style={{ fontSize: "20px" }} className="app-name">
+        <h2 style={{ fontSize: "" }} className="app-name">
           YouTube
         </h2>
       </div>
