@@ -36,7 +36,11 @@ const WatchHistory = () => {
         style={{ display: "flex", gap: "10px", overflow: "scroll" }}
       >
         {videoData.map((video) => (
-          <SmallShort title={video.title.slice(0, 13)} thumburl={video.url} />
+          <SmallShort
+            title={video.title.slice(0, 13)}
+            thumburl={video.url}
+            vdourl={video.vdourl}
+          />
         ))}
       </div>
 
