@@ -33,7 +33,7 @@ export default function R() {
 
         {/* <Route path="*" element={ ""} /> */}
       </Routes>
-      <hr />
+      {/* <hr /> */}
       <div
         style={{
           display: "flex",

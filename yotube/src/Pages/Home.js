@@ -30,7 +30,10 @@ function Home() {
       <div style={{ marginLeft: "5px" }}>
         <Nav />
       </div>
-      <div style={{ marginLeft: "5px" }} className="category-buttons  scroll-none">
+      <div
+        style={{ marginLeft: "5px" }}
+        className="category-buttons  scroll-none"
+      >
         <Side />
 
         {categories.map((category) => (
@@ -47,15 +50,18 @@ function Home() {
       <div style={{ padding: "0px" }} className="home">
         <div style={{ padding: "0px" }} className="video-list">
           {filteredVideos.map((video) => (
-            <div className="video-item">
-              <VideoCard
-                key={video.id}
-                url={video.url}
-                title={video.title}
-                views={video.views}
-                chname={video.chname}
-              />
-            </div>
+            <a href={video.vdourl}>
+              <div className="video-item">
+                <VideoCard
+                  key={video.id}
+                  url={video.url}
+                  dp={video.url}
+                  title={video.title}
+                  views={video.views}
+                  chname={video.cname}
+                />
+              </div>
+            </a>
           ))}
         </div>
       </div>

@@ -120,7 +120,7 @@
   height: 100%;
   /* overflow-y: scroll; */
   color: #ffffff;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(35, 35, 35);
 }
 
 .category-buttons {
@@ -180,7 +180,7 @@ p {
   background-color: #878485;
 }
 p {
-  color: #a3a2a2;
+  color: #b7b6b6;
 }
 
 .sidebar {
@@ -266,16 +266,10 @@ li {
   .nav {
     visibility: hidden;
   }
- 
 
-
-
-.side-hidden-small {
-  display:unset;
-}
-
-
-
+  .side-hidden-small {
+    display: unset;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -291,12 +285,9 @@ li {
     visibility: hidden;
   }
 
-
-.side-hidden-small {
-  display:unset;
-}
-
-
+  .side-hidden-small {
+    display: unset;
+  }
 }
 
 /*------------------- prfile page styling-------------------------- */

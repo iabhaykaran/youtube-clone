@@ -3,14 +3,14 @@ import Data from "../Data";
 import VideoCard from "../components/VideoCard";
 // import React, { useState } from "react";
 
-const categories = [
-  "All",
-  "Education",
-  "Entertainment",
-  "Gaming",
-  "Health",
-  "Music",
-];
+// const categories = [
+//   "All",
+//   "Education",
+//   "Entertainment",
+//   "Gaming",
+//   "Health",
+//   "Music",
+// ];
 const Subscription = () => {
   // const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -21,7 +21,7 @@ const Subscription = () => {
 
   return (
     <div style={{ height: "100%" }}>
-      <h2 style={{ padding: "10px" }}>Subscription</h2>
+      <h3 style={{ padding: "5px 6px" }}>Subscription</h3>
 
       {/* {categories.map((category) => (
         <button
@@ -35,14 +35,14 @@ const Subscription = () => {
 
       <div
         className="scroll-none"
-        style={{ padding: "10px", display: "flex", overflowX: "scroll" }}
+        style={{ padding: " 16px 5px", display: "flex", overflowX: "scroll" }}
       >
         {Data.map((video) => (
           <div
             style={{
               width: "55px",
 
-              marginRight: "10px",
+              marginRight: "12px",
 
               borderRadius: "100%",
             }}
@@ -54,7 +54,9 @@ const Subscription = () => {
               width="55px"
               height="55px"
             />
-            <p style={{fontSize:"14px"}}>{video.cname.slice(0, 6)}</p>
+            <p style={{ fontSize: "12px", color: "white" }}>
+              {video.cname.slice(0, 6)}...
+            </p>
           </div>
         ))}
       </div>
@@ -65,9 +67,10 @@ const Subscription = () => {
             <VideoCard
               key={video.id}
               url={video.url}
+              dp={video.url}
               title={video.title}
               views={video.views}
-              chname={video.chname}
+              chname={video.cname}
             />
           </div>
         ))}

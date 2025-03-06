@@ -30,7 +30,7 @@ const Shorts = () => {
   return (
     <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
       {ShortsData.map((video, index) => (
-        <div key={video.id} style={{marginBottom: "50px" }}>
+        <div key={video.id} style={{marginBottom: "px" }}>
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
