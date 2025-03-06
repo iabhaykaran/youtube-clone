@@ -7,6 +7,7 @@ const Shorts = () => {
       className="scroll-none"
       style={{
         height: "100%",
+        // background:"red",
         maxWidth: "500px",
         margin: "auto",
         display: "flex",

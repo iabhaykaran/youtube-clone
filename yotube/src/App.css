@@ -360,3 +360,35 @@ li {
 a.active {
   color: gold;
 }
+
+/*---------------shorts card stylying------------------ */
+
+.shorts-box {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  /* top: 0%; */
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background: rgba(26, 25, 25, 0.2);
+  padding: 10px;
+  /* opacity:0.7 ; */
+  /* border-radius: 5px; */
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: rgb(255, 255, 255);
+}
+.subs-btn {
+  color: #000000;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+  background-color: #f1eaea;
+}
