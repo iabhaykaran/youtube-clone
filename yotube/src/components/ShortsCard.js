@@ -31,7 +31,7 @@ const Short = () => {
         <div
           className="shorts-box"
           key={video.id}
-          style={{ marginBottom: "px" }}
+          style={{  }}
         >
           <video
             ref={(el) => (videoRefs.current[index] = el)}

@@ -365,16 +365,16 @@ a.active {
 
 .shorts-box {
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  /* max-width: 844px; */
   margin: auto;
 }
 
 .overlay {
   position: absolute;
   /* top: 0%; */
-  left: 0%;
-  right: 0%;
+  left: 1%;
+  right: 1%;
   bottom: 0%;
   background: rgba(26, 25, 25, 0.2);
   padding: 10px;
