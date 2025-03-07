@@ -36,7 +36,7 @@ const Short = () => {
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
-            height="700px"
+            height="844px"
             controls={false}
             loop
             width="100%"
