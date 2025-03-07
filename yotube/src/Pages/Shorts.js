@@ -6,7 +6,7 @@ const Shorts = () => {
     <div
       className="scroll-none"
       style={{
-        height: "100%",
+        // height: "100vh",
         // background:"red",
         maxWidth: "500px",
         margin: "auto",

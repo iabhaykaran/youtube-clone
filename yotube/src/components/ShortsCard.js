@@ -28,15 +28,10 @@ const Short = () => {
   return (
     <div>
       {ShortsData.map((video, index) => (
-        <div
-          className="shorts-box"
-          key={video.id}
-          style={{  }}
-        >
+        <div className="shorts-box" key={video.id} style={{}}>
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
-            height="844px"
             controls={false}
             loop
             width="100%"
@@ -49,12 +44,7 @@ const Short = () => {
               <p className="subs-btn"> Subscribe</p>
             </div>
 
-            <br />
-            {/* <br /> */}
             <p style={{ color: "white" }}>#zimbabwe #victoriafalls #zambia</p>
-
-            <br />
-            <br />
           </div>
         </div>
       ))}
