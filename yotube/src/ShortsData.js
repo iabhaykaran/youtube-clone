@@ -14,12 +14,12 @@ const ShortsData = [
   {
     id: 1,
     username: "Abhaykaran",
-    url: "v1.mp4",
+    url: "reel.mp4"
   },
   {
     id: 1,
     username: "Abhaykaran",
-    url: "v2.mp4",
+    url: "reel.mp4",
   },
 ];
 
