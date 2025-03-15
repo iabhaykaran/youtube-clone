@@ -47,7 +47,7 @@ export default function R() {
         }}
         className="nav"
       >
-        <div style={{ textAlign: "center", fontSize: "24px" }}>
+        <div style={{ textAlign: "center" }}>
           <Link to="home">
             <div>
               <TiHome style={{ fontSize: "25px" }} />
@@ -61,8 +61,7 @@ export default function R() {
             <div>
               <SiYoutubeshorts style={{ fontSize: "25px" }} />
             </div>
-
-            {/* <span>Shorts</span> */}
+            {/* <div>Shorts</div> */}
           </Link>
         </div>
 

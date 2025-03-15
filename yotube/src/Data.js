@@ -7,6 +7,7 @@ const videoData = [
     cname: "Codecamp",
     vdourl: "https://www.youtube.com/watch?v=SqcY0GlETPk",
     url: "react.jpg",
+    subs: "yes",
   },
 
   {
@@ -27,6 +28,7 @@ const videoData = [
     vdourl: "https://www.youtube.com/watch?v=PLl99DlL6b4",
     url: "sock.webp",
     cname: "Sony Pictures",
+    subs: "yes",
   },
   {
     id: 4,
@@ -43,6 +45,7 @@ const videoData = [
     category: "Education",
     url: "js.jpg",
     cname: "Mosh Hamedani",
+    subs: "yes",
   },
 
   {
@@ -64,6 +67,7 @@ const videoData = [
     vdourl: "https://www.youtube.com/watch?v=y1kWjwVKvRA",
     views: "3.6M",
     url: "spiderman.webp",
+    subs: "yes",
   },
   {
     id: 8,
@@ -89,6 +93,7 @@ const videoData = [
     category: "Health",
     views: "23M",
     url: "muscle.jpg",
+    subs: "yes",
   },
   {
     id: 11,
@@ -107,6 +112,7 @@ const videoData = [
     category: "Music",
     vdourl: "https://www.youtube.com/watch?v=k4yXQkG2s1E",
     url: "kala.jpg",
+    subs: "yes",
   },
   {
     id: 13,
@@ -116,6 +122,7 @@ const videoData = [
     views: "5B",
     vdourl: "https://www.youtube.com/watch?v=RsEZmictANA",
     url: "willo.webp",
+    subs: "yes",
   },
   {
     id: 14,
@@ -125,6 +132,7 @@ const videoData = [
     views: "4M",
     vdourl: "https://www.youtube.com/watch?v=tD4HCZe-tew",
     url: "zara.jpg",
+    subs: "yes",
   },
 ];
 
