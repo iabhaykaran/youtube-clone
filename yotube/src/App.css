@@ -112,7 +112,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-
+font-weight: 500;
   font-family: "sans-serif";
 }
 
@@ -207,7 +207,7 @@ li {
 .nav {
   position: sticky;
   bottom: 0%;
-  background-color: #1e1d1d;
+  background-color: #000000;
   /* padding: 10px; */
 }
 .nav p {

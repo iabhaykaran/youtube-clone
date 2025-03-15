@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 import Trending from "../Pages/Trending";
 import Shorts from "../Pages/Shorts";
 import Subscription from "../Pages/Subscription";
-
+import { TiHome } from "react-icons/ti";
 import Profile from "../Pages/Profile";
+import { SiYoutubeshorts } from "react-icons/si";
 import WatchHistory from "../Pages/WatchHistory";
 import Uploads from "../Pages/Uploads";
+import { MdOutlineSubscriptions } from "react-icons/md";
+import { FaPlus } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
 
 // import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
 // import { FaBars } from "react-icons/fa";
@@ -39,37 +43,47 @@ export default function R() {
           display: "flex",
           justifyContent: "space-around",
           padding: "12px",
-          paddingTop:"18px"
+          paddingTop: "18px",
         }}
         className="nav"
       >
-        <p>
+        <div style={{ textAlign: "center", fontSize: "24px" }}>
           <Link to="home">
-            <span>Home</span>
+            <div>
+              <TiHome style={{ fontSize: "25px" }} />
+            </div>
+            {/* <span>Home</span> */}
           </Link>
-        </p>
-        <p>
+        </div>
+
+        <div style={{ textAlign: "center" }}>
           <Link to="Shorts">
-            <span>Shorts</span>
+            <div>
+              <SiYoutubeshorts style={{ fontSize: "25px" }} />
+            </div>
+
+            {/* <span>Shorts</span> */}
           </Link>
-        </p>
-        <p>
+        </div>
+
+        <div style={{ textAlign: "center" }}>
           <Link to="uploads">
-            Upload
-            {/* []   <img src="icon.webp" height="35px" width="35px"  alt="#"/>
-             */}
+            <FaPlus style={{ fontSize: "25px" }} />
+            {/* Upload */}
           </Link>
-        </p>
-        <p>
+        </div>
+
+        <div style={{ textAlign: "center" }}>
           <Link to="subscription">
-            <span>Subscribed</span>
+            <MdOutlineSubscriptions style={{ fontSize: "25px" }} />
           </Link>
-        </p>
-        <p>
+        </div>
+
+        <div style={{ textAlign: "center" }}>
           <Link to="profile">
-            <span>You</span>
+            <CgProfile style={{ fontSize: "25px" }} />
           </Link>
-        </p>
+        </div>
       </div>
     </div>
   );
