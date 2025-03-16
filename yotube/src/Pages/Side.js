@@ -52,7 +52,7 @@ export default function Side() {
                 </li>
                 <hr />
                 <li>
-                  <FaHeart />
+                  {/* <FaHeart /> */}
                   {<span>History</span>}
                 </li>
                 <li>
@@ -75,16 +75,16 @@ export default function Side() {
                 {<span>Trending</span>}
               </li>
               <li>
-                <FaHeart />
+                {/* <FaHeart /> */}
                 {<span>Shopping</span>}
               </li>
               <li>
-                <FaMusic />
+                {/* <FaMusic /> */}
 
                 {<span>Music</span>}
               </li>
               <li>
-                <MdOutlineLiveTv />
+                {/* <MdOutlineLiveTv /> */}
                 {<span>Films</span>}
               </li>
               <li>{<span>Live</span>}</li>
