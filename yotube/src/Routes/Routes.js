@@ -38,52 +38,6 @@ export default function R() {
 
         {/* <Route path="*" element={ ""} /> */}
       </Routes>
-      {/* <hr /> */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          padding: "12px",
-          paddingTop: "18px",
-        }}
-        className="nav"
-      >
-        <div style={{ textAlign: "center" }}>
-          <Link to="home">
-            <div>
-              <TiHome style={{ fontSize: "30px" }} />
-            </div>
-            {/* <span>Home</span> */}
-          </Link>
-        </div>
-
-        <div style={{ textAlign: "center" }}>
-          <Link to="Shorts">
-            <div>
-              <MdOutlineLiveTv style={{ fontSize: "25px" }} />
-            </div>
-          </Link>
-        </div>
-
-        <div style={{ textAlign: "center" }}>
-          <Link to="uploads">
-            <FaPlus style={{ fontSize: "25px" }} />
-            {/* Upload */}
-          </Link>
-        </div>
-
-        <div style={{ textAlign: "center" }}>
-          <Link to="subscription">
-            <MdOutlineSubscriptions style={{ fontSize: "25px" }} />
-          </Link>
-        </div>
-
-        <div style={{ textAlign: "center" }}>
-          <Link to="profile">
-            <CgProfile style={{ fontSize: "25px" }} />
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }
