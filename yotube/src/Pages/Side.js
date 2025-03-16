@@ -64,13 +64,13 @@ export default function Side() {
                   {<span>Watch Later</span>}
                 </li>
                 <li>
-                  <FaHeart />
+                  {/* <FaHeart /> */}
                   {<span>Liked Videos</span>}
                 </li>
                 <hr />
               </div>
               <li>
-                <FaFire />
+                {/* <FaFire /> */}
                 {/* <FaHeart /> */}
                 {<span>Trending</span>}
               </li>

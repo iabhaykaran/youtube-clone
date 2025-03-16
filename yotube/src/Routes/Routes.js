@@ -7,7 +7,8 @@ import Shorts from "../Pages/Shorts";
 import Subscription from "../Pages/Subscription";
 import { TiHome } from "react-icons/ti";
 import Profile from "../Pages/Profile";
-import { SiYoutubeshorts } from "react-icons/si";
+import { MdOutlineLiveTv } from "react-icons/md";
+// import { SiYoutubeshorts } from "react-icons/si";
 import WatchHistory from "../Pages/WatchHistory";
 import Uploads from "../Pages/Uploads";
 import { MdOutlineSubscriptions } from "react-icons/md";
@@ -50,7 +51,7 @@ export default function R() {
         <div style={{ textAlign: "center" }}>
           <Link to="home">
             <div>
-              <TiHome style={{ fontSize: "25px" }} />
+              <TiHome style={{ fontSize: "30px" }} />
             </div>
             {/* <span>Home</span> */}
           </Link>
@@ -59,9 +60,8 @@ export default function R() {
         <div style={{ textAlign: "center" }}>
           <Link to="Shorts">
             <div>
-              <SiYoutubeshorts style={{ fontSize: "25px" }} />
+              <MdOutlineLiveTv style={{ fontSize: "25px" }} />
             </div>
-            {/* <div>Shorts</div> */}
           </Link>
         </div>
 
