@@ -3,8 +3,18 @@ import React from "react";
 import Short from "../components/ShortsCard";
 const Shorts = () => {
   return (
-    <div className="scroll-none">
-      <Short />
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflowY: "scroll",
+      }}
+      className="scroll-none"
+    >
+      <div className="shorts-box">
+        <Short />
+      </div>
     </div>
   );
 };

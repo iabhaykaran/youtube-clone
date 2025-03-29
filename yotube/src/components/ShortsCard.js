@@ -28,7 +28,7 @@ const Short = () => {
   return (
     <div>
       {ShortsData.map((video, index) => (
-        <div className="shorts-box" key={video.id} style={{}}>
+        <div key={video.id} style={{ position: "relative", height: "100vh" }}>
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
