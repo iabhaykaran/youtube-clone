@@ -125,7 +125,14 @@ li {
 }
 
 /* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
+@media only screen and (max-width: 600px) {
+  .shorts-box {
+    /* position: relative; */
+    width: 1080px;
+    height: 1867px;
+    max-width: 500px;
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -261,14 +268,6 @@ a.active {
 }
 
 /*---------------shorts card stylying------------------ */
-
-.shorts-box {
-  /* position: relative; */
-  width: 1080px;
-  height: 1867px;
-  /* height: 100vh; */
-  max-width: 500px;
-}
 
 .overlay {
   position: absolute;
