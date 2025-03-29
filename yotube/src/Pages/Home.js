@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import VideoCard from "../components/VideoCard";
 import Nav from "./Nav";
 import videoData from "../Data";
-
+// import BottomNav from "./BtmNav";
 // import { FaHome, FaFire, FaPlayCircle, FaHeart, FaBars } from "react-icons/fa";
 
 import Side from "./Side";
-import BottomNav from "./BtmNav";
+// import BottomNav from "./BtmNav";
 
 const categories = [
   "All",
@@ -69,7 +69,7 @@ function Home() {
         </div>
       </div>
 
-      <BottomNav />
+      {/* <BottomNav /> */}
     </>
   );
 }

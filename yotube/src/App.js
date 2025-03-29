@@ -6,13 +6,14 @@ import R from "./Routes/Routes";
 // import Subscription from "../Pages/Subscription";
 // import Profile from "../Pages/Profile";
 
+import BottomNav from "./BtmNav";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <R />
-       
+      <BottomNav/>
     </div>
   );
 }
