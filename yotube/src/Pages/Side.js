@@ -3,7 +3,7 @@ import { Sidebar } from "primereact/sidebar";
 import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
-import { MdOutlineLiveTv } from "react-icons/md";
+// import { MdOutlineLiveTv } from "react-icons/md";
 // import { Link } from "react-router-dom";
 import "../App.css";
 import Nav from "./Nav";
