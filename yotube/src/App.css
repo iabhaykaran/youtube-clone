@@ -264,7 +264,8 @@ a.active {
 
 .shorts-box {
   /* position: relative; */
-  width: 100%;
+  width: 1080px;
+  height: 1867px;
   /* height: 100vh; */
   max-width: 500px;
 }
