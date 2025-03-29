@@ -175,6 +175,17 @@ li {
   .side-hidden-small {
     display: unset;
   }
+
+
+ .shorts-box {
+    /* position: relative; */
+    width: 400px;
+    
+    height: 100vh;
+    max-width: 500px;
+  }
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
