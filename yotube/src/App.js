@@ -6,7 +6,10 @@ import R from "./Routes/Routes";
 // import Subscription from "../Pages/Subscription";
 // import Profile from "../Pages/Profile";
 
-import BottomNav from "./BtmNav";
+import BottomNav from "../Pages/BtmNav";
+
+
+
 import "./App.css";
 
 function App() {

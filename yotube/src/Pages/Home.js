@@ -5,9 +5,9 @@ import Nav from "./Nav";
 import videoData from "../Data";
 // import BottomNav from "./BtmNav";
 // import { FaHome, FaFire, FaPlayCircle, FaHeart, FaBars } from "react-icons/fa";
+// import BottomNav from "./BtmNav";
 
 import Side from "./Side";
-// import BottomNav from "./BtmNav";
 
 const categories = [
   "All",
