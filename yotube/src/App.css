@@ -9,18 +9,18 @@
 * {
   padding: 0px;
   margin: 0px;
-
   box-sizing: border-box;
   font-weight: 500;
-  /* font-family: "Poppins", sans-serif; */
 }
 a.active {
   background-color: blue;
 }
+
 .App {
-  height: 100%;
   color: #ffffff;
   background-color: rgb(13, 13, 13);
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .category-buttons {
@@ -31,6 +31,12 @@ a.active {
 
 .home {
   width: 100%;
+  display: flex;
+  background-color: #000000;
+  flex-direction: column;
+  overflow: scroll;
+  height: 100vh;
+  padding: 10px;
 }
 
 .app-name {
@@ -66,9 +72,8 @@ a.active {
 p {
   font-size: 15px;
 }
-.video-item {
-  border-radius: 10px;
 
+.video-item {
   text-align: left;
 }
 
@@ -76,7 +81,7 @@ p {
   height: 237px;
   width: 100%;
   margin-bottom: 3px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #878485;
 }
 p {
@@ -103,14 +108,20 @@ li {
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   bottom: 0%;
+  width: 100%;
   background-color: #000000;
-  /* padding: 10px; */
 }
 .nav p {
   font-weight: 500;
   color: #fff7f7;
+}
+
+.top-category-topnav {
+  /* position: fixed; */
+  width: 100%;
+  background-color: #000000;
 }
 
 menu,
@@ -123,8 +134,12 @@ menu,
 li {
   display: flex;
 }
+.video-list {
+  padding-bottom: 10%;
+}
 
-/* Extra small devices (phones, 600px and down) */
+/*---Extra small devices(phones, 600px and down)------------ */
+
 @media only screen and (max-width: 600px) {
   .shorts-box {
     /* position: relative; */
@@ -132,15 +147,36 @@ li {
     height: 1867px;
     max-width: 500px;
   }
+
+  .large-screen-sidebar {
+    display: none;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* --------------Small devices
+ (portrait tablets and large phones, 600px and up) 
+ -----------------*/
+
 @media only screen and (min-width: 600px) {
   .video-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100%;
-    margin: 1px;
+    padding: 0px 10%;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 988px) {
+  .large-screen-sidebar {
+    display: none;
+  }
+
+  .video-list {
+    display: grid;
+    grid-template-columns:1fr;
+    width: 100%;
+    /* padding:0px 10%; */
     gap: 20px;
   }
 }
@@ -151,7 +187,7 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    margin: 1px;
+
     gap: 20px;
   }
   /* .nav {
@@ -163,7 +199,7 @@ li {
 @media only screen and (min-width: 992px) {
   .video-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     margin: 1px;
     gap: 20px;
@@ -176,16 +212,29 @@ li {
     display: unset;
   }
 
-
- .shorts-box {
-    /* position: relative; */
+  .shorts-box {
     width: 400px;
-    
     height: 100vh;
     max-width: 500px;
   }
 
+  .sidebtn-hidden {
+    display: none;
+  }
 
+  .large-screen-sidebar {
+    display: flex;
+    width: 20%;
+
+    height: 100vh;
+    padding-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    background-color: #000000;
+    padding-top: 150px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -195,7 +244,7 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
 
-    margin: 1px;
+    padding: 0;
     gap: 20px;
   }
   .nav {

@@ -6,7 +6,7 @@ const Subscription = (props) => {
   const Subscribe = videoData.filter((videoData) => videoData.subs === "yes");
 
   return (
-    <div style={{ height: "100%" }}>
+    <div style={{ height: "100vh", overflow: "scroll" }}>
       <div style={{ padding: "5px 8px" }}>
         <Nav />
       </div>

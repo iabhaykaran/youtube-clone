@@ -4,7 +4,7 @@ import videoData from "../Data";
 
 const Profile = (props) => {
   return (
-    <div style={{ height: "100%", overflowY: "scroll" }}>
+    <div style={{ height: "100vh", overflowY: "scroll" }}>
       <div
         style={{
           display: "flex",

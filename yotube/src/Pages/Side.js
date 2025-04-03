@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Sidebar } from "primereact/sidebar";
-import { FaHome, FaFire, FaPlayCircle, FaHeart, FaMusic } from "react-icons/fa";
+import { FaHome, FaPlayCircle } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { SiYoutubeshorts } from "react-icons/si";
 // import { MdOutlineLiveTv } from "react-icons/md";
@@ -18,7 +18,7 @@ export default function Side() {
         visible={visible}
         onHide={() => setVisible(false)}
       >
-        <Nav/>
+        <Nav />
 
         <div className="menu">
           <ul>
