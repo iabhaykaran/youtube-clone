@@ -1,5 +1,5 @@
 import R from "./Routes/Routes";
-import BottomNav from "./Pages/BtmNav";
+import BottomNav from "./components/BtmNav";
 import "./App.css";
 // import { Route, Routes } from "react-router-dom";
 // import Home from "../Pages/Home";

@@ -20,23 +20,22 @@ a.active {
   color: #ffffff;
   background-color: rgb(13, 13, 13);
   height: 100vh;
+  position: fixed;
+  width: 100%;
+
   scroll-behavior: smooth;
 }
 
 .category-buttons {
-  margin: 8px 0;
+  padding-bottom: 8px;
   display: flex;
   overflow-x: scroll;
 }
 
 .home {
   width: 100%;
-  display: flex;
-  background-color: #000000;
-  flex-direction: column;
-  overflow: scroll;
+
   height: 100vh;
-  padding: 10px;
 }
 
 .app-name {
@@ -62,13 +61,26 @@ a.active {
 .side-hidden-small {
   display: none;
 }
+.video-scroll {
+  height: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.video-section {
+  height: 100vh;
+}
 
 .video-list {
   display: grid;
+
   grid-template-columns: 1fr;
   width: 100%;
   gap: 20px;
 }
+
 p {
   font-size: 15px;
 }
@@ -84,6 +96,7 @@ p {
   border-radius: 10px;
   background-color: #878485;
 }
+
 p {
   color: #b7b6b6;
 }
@@ -107,21 +120,23 @@ li {
   padding: 1rem;
 }
 
-.nav {
+/*----- bottom nav mobile------------- */
+
+.bottom-nav {
   position: fixed;
   bottom: 0%;
   width: 100%;
   background-color: #000000;
 }
-.nav p {
+.bottom-nav p {
   font-weight: 500;
-  color: #fff7f7;
+  color: #000000;
 }
 
 .top-category-topnav {
-  /* position: fixed; */
   width: 100%;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: transparent;
 }
 
 menu,
@@ -151,6 +166,10 @@ li {
   .large-screen-sidebar {
     display: none;
   }
+
+  .video-section {
+    padding: 1rem;
+  }
 }
 
 /* --------------Small devices
@@ -162,8 +181,12 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    padding: 0px 10%;
+
     gap: 20px;
+  }
+
+  .video-section {
+    padding: 0px 10%;
   }
 }
 
@@ -174,7 +197,7 @@ li {
 
   .video-list {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     width: 100%;
     /* padding:0px 10%; */
     gap: 20px;
@@ -204,6 +227,10 @@ li {
     margin: 1px;
     gap: 20px;
   }
+  .video-section {
+    padding: 10px;
+  }
+
   .nav {
     visibility: hidden;
   }

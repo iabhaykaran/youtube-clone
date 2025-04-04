@@ -6,7 +6,6 @@ import { MdOutlineSubscriptions } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
-
 export default function BottomNav() {
   return (
     <div
@@ -16,7 +15,7 @@ export default function BottomNav() {
         padding: "12px",
         paddingTop: "18px",
       }}
-      className="nav"
+      className="bottom-nav nav"
     >
       <div style={{ textAlign: "center" }}>
         <Link to="home">

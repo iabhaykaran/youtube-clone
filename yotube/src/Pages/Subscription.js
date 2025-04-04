@@ -1,6 +1,6 @@
 import videoData from "../Data";
 import VideoCard from "../components/VideoCard";
-import Nav from "./Nav";
+import Nav from "../components/Topnav";
 
 const Subscription = (props) => {
   const Subscribe = videoData.filter((videoData) => videoData.subs === "yes");
