@@ -13,7 +13,7 @@ export default function BottomNav() {
         display: "flex",
         justifyContent: "space-around",
         padding: "12px",
-        paddingTop: "18px",
+        paddingTop: "8px",
       }}
       className="bottom-nav nav"
     >
