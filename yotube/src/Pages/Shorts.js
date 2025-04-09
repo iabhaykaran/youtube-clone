@@ -34,7 +34,7 @@ const Short = () => {
     onSwipedDown: () => handleSwipe("down"),
     preventDefaultTouchmoveEvent: true,
     trackTouch: true,
-    trackMouse: false,
+    trackMouse: true,
   });
 
   const handleSwipe = (direction) => {
