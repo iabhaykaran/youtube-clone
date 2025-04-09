@@ -1,5 +1,3 @@
-
-
 import React, { useRef, useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import ShortsData from "../ShortsData";
@@ -16,7 +14,6 @@ const Short = () => {
     trackMouse: true,
   });
 
-  
   useEffect(() => {
     const handleWheel = (event) => {
       if (event.deltaY > 0) {
@@ -28,7 +25,6 @@ const Short = () => {
     window.addEventListener("wheel", handleWheel);
     return () => window.removeEventListener("wheel", handleWheel);
   }, [currentIndex]);
-
 
   const handleSwipe = (direction) => {
     setCurrentIndex((prevIndex) => {
@@ -61,6 +57,9 @@ const Short = () => {
         width: "100%",
         overflow: "hidden",
         position: "relative",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
       }}
     >
       {ShortsData.map((video, index) => (
@@ -69,7 +68,7 @@ const Short = () => {
           style={{
             height: "100vh",
             width: "100%",
-          
+
             position: "absolute",
             top: `${(index - currentIndex) * 100}vh`,
             left: 0,
@@ -83,7 +82,6 @@ const Short = () => {
             loop
             maxWidth="100%"
             playsInline
-            
             style={{ height: "100%", objectFit: "cover" }}
           />
           <div
