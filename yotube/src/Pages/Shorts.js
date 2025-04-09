@@ -5,10 +5,10 @@ const Shorts = () => {
   return (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        overflowY: "scroll",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
+        // overflowY: "scroll",
       }}
       className="scroll-none"
     >
