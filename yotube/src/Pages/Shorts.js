@@ -90,7 +90,7 @@ const Short = () => {
             loop
             maxWidth="100%"
             playsInline
-            muted
+            
             style={{ height: "100%", objectFit: "cover" }}
           />
           <div
