@@ -1,25 +1,4 @@
-// import React from "react";
-// // import Reel from "../components/ShortsCard";
-// import Short from "../components/ShortsCard";
-// const Shorts = () => {
-//   return (
-//     <div
-//       style={{
-//         // display: "flex",
-//         // justifyContent: "center",
-//         // alignItems: "center",
-//         // overflowY: "scroll",
-//       }}
-//       className="scroll-none"
-//     >
-//       <div className="shorts-box">
-//         <Short />
-//       </div>
-//     </div>
-//   );
-// };
 
-// export default Shorts;
 
 import React, { useRef, useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
@@ -36,6 +15,20 @@ const Short = () => {
     trackTouch: true,
     trackMouse: true,
   });
+
+  
+  useEffect(() => {
+    const handleWheel = (event) => {
+      if (event.deltaY > 0) {
+        handleSwipe("up");
+      } else if (event.deltaY < 0) {
+        handleSwipe("down");
+      }
+    };
+    window.addEventListener("wheel", handleWheel);
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, [currentIndex]);
+
 
   const handleSwipe = (direction) => {
     setCurrentIndex((prevIndex) => {
@@ -97,7 +90,7 @@ const Short = () => {
             className="overlay"
             style={{
               position: "absolute",
-              bottom: "10%",
+              bottom: "15%",
               left: "10px",
               color: "white",
             }}
