@@ -7,6 +7,7 @@ import Subscription from "../Pages/Subscription";
 import Profile from "../Pages/Profile";
 import WatchHistory from "../Pages/WatchHistory";
 import Uploads from "../Pages/Uploads";
+import Nopage from "../Pages/Nopage";
 
 export default function R() {
   return (
@@ -24,7 +25,7 @@ export default function R() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/history" element={<Trending />} />
 
-        {/* <Route path="*" element={ ""} /> */}
+        <Route path="*" element={<Nopage/>} />
       </Routes>
     </div>
   );
