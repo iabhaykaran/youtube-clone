@@ -21,7 +21,6 @@
 
 // export default Shorts;
 
-
 import React, { useRef, useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import ShortsData from "../ShortsData";
@@ -77,6 +76,7 @@ const Short = () => {
           style={{
             height: "100vh",
             width: "100%",
+          
             position: "absolute",
             top: `${(index - currentIndex) * 100}vh`,
             left: 0,
@@ -88,7 +88,7 @@ const Short = () => {
             src={video.url}
             controls={false}
             loop
-            width="100%"
+            maxWidth="100%"
             playsInline
             muted
             style={{ height: "100%", objectFit: "cover" }}
@@ -102,7 +102,7 @@ const Short = () => {
               color: "white",
             }}
           >
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", marginBottom: "50px" }}>
               <p style={{ margin: "5px" }}>{video.username}</p>
               <p className="subs-btn"> Subscribe</p>
             </div>
