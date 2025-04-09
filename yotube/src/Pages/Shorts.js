@@ -97,12 +97,12 @@ const Short = () => {
             className="overlay"
             style={{
               position: "absolute",
-              bottom: "20px",
+              bottom: "10%",
               left: "10px",
               color: "white",
             }}
           >
-            <div style={{ display: "flex", marginBottom: "10%" }}>
+            <div style={{ display: "flex", marginBottom: "5%" }}>
               <p style={{ margin: "5px" }}>{video.username}</p>
               <p className="subs-btn"> Subscribe</p>
             </div>
