@@ -102,7 +102,7 @@ const Short = () => {
               color: "white",
             }}
           >
-            <div style={{ display: "flex", marginBottom: "50px" }}>
+            <div style={{ display: "flex", marginBottom: "10%" }}>
               <p style={{ margin: "5px" }}>{video.username}</p>
               <p className="subs-btn"> Subscribe</p>
             </div>
