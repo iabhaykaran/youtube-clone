@@ -9,12 +9,188 @@ const ShortsData = [
     username: "Abhaykaran",
     url: "reel.mp4",
 
-    likes:"250"
+    likes: "250",
+  },
+ 
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
   },
   {
     id: 1,
     username: "Abhaykaran",
-    url: "reel.mp4"
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
+  },
+  {
+    id: 1,
+    username: "Abhaykaran",
+    url: "reel.mp4",
   },
   {
     id: 1,

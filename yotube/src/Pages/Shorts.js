@@ -78,6 +78,7 @@ const Short = () => {
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             src={video.url}
+        
             controls={false}
             loop
             maxWidth="100%"
